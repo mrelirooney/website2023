@@ -1,0 +1,156 @@
+@import "mainSaSS", "mediaQueries";
+  
+.HeroContain{
+  height: 90vh;
+  z-index: 1;
+  background-repeat: $bg-no-repeat;
+  background-size: $bg-cover-size;
+  margin-top: -115px;
+  background-color: $bg-color-00;
+}
+
+.callToAction {
+  width: 30vw;
+  align-self: center;
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 5px;
+  border: none;
+}
+
+.buttonTitle{
+  color: $font-color-subtitle;
+  font-size: $font-size-subtitle;
+  line-height: 1.5em;
+  margin-top: 5px;
+  padding: .05em;
+  text-shadow: $text-shadow-org;
+}
+
+.callToAction:hover{
+  background-color: rgba(255, 255, 255, .75);
+  box-shadow: $text-shadow-hov;
+}
+
+.panelCol{
+  opacity: 90%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: $text-dec-none;
+}
+
+.panelCol:hover{
+  opacity: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+.panelTitle{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#resumePanel{
+  background-image:url("../photos/ResumePanel.png");
+  background-size: $bg-cover-size;
+  background-repeat: $bg-no-repeat;
+  background-position: center;
+}
+
+#aboutPanel{
+  background-image:url("../photos/IMG_1048-edited.png");
+  background-size: $bg-cover-size;
+  background-repeat: $bg-no-repeat;
+  background-position: center;
+}
+
+#photosPanel{
+  background-image:url("../photos/IMG_3961.jpg");
+  background-size: $bg-cover-size;
+  background-repeat: $bg-no-repeat;
+  background-position: bottom;
+}
+
+#videosPanel{
+  background-image:url("../photos/VideoPanel.png");
+  background-size: $bg-cover-size;
+  background-repeat: $bg-no-repeat;
+  background-position: top;
+}
+
+/*Media Queries begin */
+
+/* Mobile Small - width = 320px */
+/* Mobile Medium - width = 375px */ 
+/* Mobile Large - width = 425px */   
+  @media only screen and (max-width: 426px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8394-edited.png");
+    }
+
+    .callToAction{
+      width: 65vw;
+    }
+    
+    .buttonTitle{
+      font-size: .95em;
+      font-weight: bold;
+    }
+
+    .panelCol{
+      opacity: 100%;
+      height: 33vh;
+    }
+
+  }
+
+/* Tablet - width = 768px */
+  @media only screen and (min-width: 427px) and (max-width: 768px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8394-edited.png");
+      background-position: top;
+    }
+  }
+
+/* Laptop Small - width = 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8394-edited.png");
+      background-position: top;
+    }
+
+  }
+  
+/* Laptop Large - width = 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8311-edited.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1245px) {
+        .HeroContain {
+          background-image:url("../photos/IMG_8311-edited.png");
+          background-size: 120%;
+          background-position: bottom;
+      }
+    }
+  }
+
+/* Monitor 4K - width = 2560px */ 
+  @media only screen and (min-width: 1442px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8311-edited.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+  
+  }
+  
+  
+/*Media Queries Ended*/

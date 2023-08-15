@@ -1,0 +1,346 @@
+@import "mainSaSS";
+
+/*Media Queries For All The Pages Of This Website */
+
+/* Mobile Small - width = 320px */
+/* Mobile Medium - width = 375px */ 
+/* Mobile Large - width = 425px */   
+@media only screen and (max-width: 426px) {
+    .HeroContain {
+      background-position: center;
+    }
+    header .nav-btn{
+        display: flex;
+        visibility: visible;
+        font-size: $font-size-subtitle;
+        opacity: 1;
+        z-index: $z-index-10;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        transition: 1s;
+        transform: translateY(-100vh);
+        z-index: 11;
+    }
+
+    .display-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+        font-size: $font-size-subtitle;
+    }
+
+    nav{
+        background-color: $fg-color-00
+    }
+
+    header .responsive_nav{
+        transform: none;
+        z-index: 11;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .profilePic{
+        display: none;
+    }
+    .titleBox{
+      line-height: .5em;
+    }
+  
+    .subtitleBox{
+      line-height: .5em;
+    }
+    
+    
+    .title00{
+      font-size: 2.2em;
+      line-height: .90em;
+      margin-top: -14px;
+    }
+    
+    .title01{
+      font-size: .9em;
+      padding: .15em;
+    }
+
+    .description{
+        padding: .45em;
+        font-size: .9em;
+        line-height: 1.3em;
+        font-weight: normal;
+        margin-top: -20px;
+      }
+      
+      .description-fine{
+        font-size: 12px;
+        color: rgba(255, 255, 255, .5);
+        text-align: left;
+        line-height: 1.5em;
+        padding: 10px 0px 0px 10px;
+      }
+
+    .theFooter{
+      height: 80vh;
+      font-size: larger;
+      padding: 15px 0px;
+    }
+
+    .contactFooter{
+      text-align: center;
+    }
+
+    .navFooter{
+      text-align: center;
+    }
+
+    .theFooter nav{
+      display: none;
+    }
+
+    .finePrint{
+      font-size: 10px;
+    }
+  
+    
+
+    @media only screen and (min-width: 376px) and (max-width: 426px) {
+        
+      .title00{
+        font-size: 2.8em;
+        line-height: .85em;
+      }
+      
+      .title01{
+        font-size: 1.1em;
+        padding: .35em;
+        
+      }
+
+      .topButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 10px;
+        bottom: 30px;
+        width: 25px;
+        height: 25px;
+        border: none;
+        border-radius: 10%;
+        background-color: rgba(239, 239, 239, .75);
+        box-shadow: $text-shadow-org;
+        font-size: $font-size-subtitle;
+      }
+  
+      .topButton:active{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        width: 25px;
+        height: 35px;
+        right: 10px;
+        bottom: 30px;
+        background-color: rgba(239, 239, 239, 0);
+      }
+
+    }
+
+
+  }
+
+/* Tablet - width = 768px */
+  @media only screen and (min-width: 427px) and (max-width: 768px) {
+
+    header .nav-btn{
+        display: flex;
+        visibility: visible;
+        font-size: $font-size-subtitle;
+        opacity: 1;
+        z-index: $z-index-10;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        transition: 1s;
+        transform: translateY(-100vh);
+        z-index: 11;
+    }
+
+    .display-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+        font-size: $font-size-subtitle;
+    }
+
+    nav{
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+
+    header .responsive_nav{
+        transform: none;
+        z-index: 11;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .profilePic{
+        display: none;
+    }
+
+    .titleBox{
+      padding: 10px 10px;
+    }
+
+    .title00{
+      font-size: 3.2em;
+      line-height: .90em;
+    }
+
+    .theFooter nav{
+      display: none;
+    }
+
+    @media only screen and (min-width: 427px) and (max-width: 499px) {
+      .title00{
+        font-size: 3em;
+        line-height: .70em;
+      }
+      
+      .title01{
+        font-size: 1.2em;
+        padding: .35em;
+      }
+
+    }
+
+    @media only screen and (min-width: 720px) and (max-width: 768px) {
+      .title00{
+        font-size: 4em;
+        line-height: .8em;
+      }
+      
+      .title01{
+        font-size: 1.5em;
+        padding: .35em;
+      }
+
+    }
+    .topButton{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: 10px;
+      bottom: 30px;
+      width: 25px;
+      height: 25px;
+      border: none;
+      border-radius: 10%;
+      background-color: rgba(239, 239, 239, .75);
+      box-shadow: $text-shadow-org;
+      font-size: $font-size-subtitle;
+    }
+
+    .topButton:active{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      width: 25px;
+      height: 35px;
+      right: 10px;
+      bottom: 30px;
+      background-color: rgba(239, 239, 239, 0);
+    }
+  }
+
+/* Laptop Small - width = 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8394-edited.png");
+      background-position: top;
+    }
+    .profilePic-hidden{
+        display: none;
+    }
+
+  }
+  
+/* Laptop Large - width = 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8311-edited.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+    .profilePic-hidden{
+        display: none;
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1245px) {
+        .HeroContain {
+          background-image:url("../photos/IMG_8311-edited.png");
+          background-size: 120%;
+          background-position: bottom;
+      }
+    }
+  }
+
+/* Monitor 4K - width = 2560px */ 
+  @media only screen and (min-width: 1442px) {
+    .HeroContain {
+      background-image:url("../photos/IMG_8311-edited.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+    .profilePic-hidden{
+        display: none;
+    }
+
+    .theFooter{
+      height: 45vh;
+      padding: 10px 0px;
+    }
+  
+  }
+  
+  

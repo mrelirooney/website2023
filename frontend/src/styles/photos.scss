@@ -1,0 +1,140 @@
+@import "mainSaSS", "mediaQueries";
+  
+.HeroContain-photos{
+    height: 90vh;
+    z-index: 1;
+    background-repeat: $bg-no-repeat;
+    background-size: $bg-cover-size;
+    margin-top: -115px;
+}
+
+.container-photos{
+  background-color: $bg-color-00;
+}
+
+#phones{
+  display: none;
+}
+
+.pic-modal{
+  width: 100%;
+  height: 100vh;
+  background-color: $fg-color-00;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -15vh;
+}
+
+.bigPicture{
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border: 10px rgba(236, 236, 236, 1) solid;
+}
+
+.bigPictureX{
+  padding: 0px;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  outline: none;
+  color: $font-color-title;
+  font-size: $font-size-subtitle;
+}
+
+.leftArrow{
+  padding: 0px;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  border: none;
+  outline: none;
+  color: $font-color-title;
+  font-size: $font-size-subtitle;
+}
+
+.rightArrow{
+  padding: 0px;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  border: none;
+  outline: none;
+  color: $font-color-title;
+  font-size: $font-size-subtitle;
+}
+
+.mason:hover {
+  box-shadow: $text-shadow-hov;
+}
+
+
+/*Media Queries begin */
+
+/* Mobile Small - width = 320px */
+/* Mobile Medium - width = 375px */ 
+/* Mobile Large - width = 425px */   
+  @media only screen and (max-width: 426px) {
+    .HeroContain-photos {
+      background-image:url("../photos/IMG_8151.jpg");
+
+    }    
+
+  }
+
+/* Tablet - width = 768px */
+  @media only screen and (min-width: 427px) and (max-width: 768px) {
+    .HeroContain-photos {
+      background-image:url("../photos/IMG_8151.jpg");
+      background-position: center;
+    }
+  }
+
+/* Laptop Small - width = 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .HeroContain-photos {
+      background-image:url("../photos/IMG_8153.jpg");
+      background-position: center;
+    }
+
+  }
+  
+/* Laptop Large - width = 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    .HeroContain-photos {
+      background-image:url("../photos/IMG_8153.jpg");
+      background-size: 100%;
+      background-position: center;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1245px) {
+        .HeroContain-photos {
+          background-image:url("../photos/IMG_8153.jpg");
+          background-size: 120%;
+          background-position: center;
+      }
+    }
+  }
+
+/* Monitor 4K - width = 2560px */ 
+  @media only screen and (min-width: 1442px) {
+    .HeroContain-photos {
+      background-image:url("../photos/IMG_8153.jpg");
+      background-size: 100%;
+      background-position: center;
+    }
+  
+  }
+  
+  
+/*Media Queries Ended*/

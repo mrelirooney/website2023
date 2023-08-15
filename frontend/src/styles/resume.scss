@@ -1,0 +1,283 @@
+@import "mainSaSS", "mediaQueries";
+  
+.HeroContain-resume{
+  height: 100vh;
+  z-index: 1;
+  background-repeat: $bg-no-repeat;
+  background-size: $bg-cover-size;
+  margin-top: -115px;
+}
+
+.container-resume{
+  background-color: $bg-color-00;
+  padding: 0% 9.5%;
+
+}
+
+.summaryBox{
+  display: flex;
+  justify-content: center;
+}
+
+#laptop-queue{
+  display: none;
+}
+
+.faceOfCard{
+  width: 70%;
+  height: 70%;
+  align-self: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 260px;
+  border-radius: 5%;
+  padding-top: 15px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: $font-color-subtitle;
+  color: black;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $font-color-subtitle;
+  color: $bg-color-00;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.card-title{
+  font-size: 2em;
+  line-height: .90em;
+  margin-top: 15px;
+}
+
+.card-description{
+
+  font-size: .9em;
+  line-height: 1.5em;
+  font-weight: normal;
+  z-index: 5;
+}
+
+.card-number{
+
+  font-size: .9em;
+  line-height: .8em;
+  font-weight: normal;
+  color: rgba(0,0,0,.5);
+
+}
+
+.cardIcons{
+  width: .9em;
+  height: .9em;
+  align-self: center;
+  border-radius: 10%;
+  margin: 0px 10px;
+  opacity: .5;
+}
+
+
+/*Media Queries begin */
+
+/* Mobile Small - width = 320px */
+/* Mobile Medium - width = 375px */ 
+/* Mobile Large - width = 425px */   
+  @media only screen and (max-width: 426px) {
+    .HeroContain-resume {
+      background-image:url("../photos/ResumePanel.png");
+    }
+
+    .btn{
+      width: 50vw;
+    }
+    
+    .buttonTitle{
+      font-size: .95em;
+      font-weight: bold;
+    }
+
+    .panelCol{
+      opacity: 100%;
+      height: 33vh;
+    }
+
+    #emptySpace-lol{
+      display: none;
+    }
+
+  }
+
+/* Tablet - width = 768px */
+  @media only screen and (min-width: 427px) and (max-width: 768px) {
+    .HeroContain-resume {
+      background-image:url("../photos/ResumePanel.png");
+      background-position: top;
+    }
+
+    #emptySpace-lol{
+      display: none;
+    }
+  }
+
+/* Laptop Small - width = 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .HeroContain-resume {
+      background-image:url("../photos/ResumePanel.png");
+      background-position: top;
+    }
+
+    #laptop-queue{
+      display: block;
+      align-self: center;
+    }
+
+    #mobile-queue{
+      display: none;
+    }
+
+    #emptySpace-lol{
+      display: none;
+    }
+
+  }
+  
+/* Laptop Large - width = 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    .HeroContain-resume {
+      background-image:url("../photos/ResumePanel.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    #laptop-queue{
+      display: block;
+      align-self: center;
+    }
+
+    #mobile-queue{
+      display: none;
+    }
+
+    #emptySpace-lol{
+      display: block;
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1245px) {
+        .HeroContain-resume {
+          background-image:url("../photos/ResumePanel.png");
+          background-size: 120%;
+          background-position: bottom;
+      }
+    }
+
+
+  }
+
+/* Monitor 4K - width = 2560px */ 
+  @media only screen and (min-width: 1442px) {
+    .HeroContain-resume {
+      background-image:url("../photos/ResumePanel.png");
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    #laptop-queue{
+      display: block;
+      align-self: center;
+    }
+
+    #mobile-queue{
+      display: none;
+    }
+
+    .faceOfCard{
+      width: 74.5%;
+      height: 74.5%;
+    }
+
+    .flip-card {
+      width: 300px;
+      height: 300px;
+      border-radius: 10%;
+    }
+
+    .flip-card-inner {
+      border-radius: 10%;
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      border-radius: 10%;
+    }
+
+    /* Style the back side */
+
+    .card-description{
+
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-weight: normal;
+      z-index: 5;
+    }
+
+    .card-number{
+      color: rgba(0,0,0,.5);
+
+    }
+
+    .cardIcons{
+      width: 1.1em;
+      height: 1.1em;
+    }
+
+
+        #emptySpace-lol{
+          display: block;
+        }
+      
+  }
+      
+  
+/*Media Queries Ended*/
