@@ -5,6 +5,7 @@ const About = lazy(() => import('./About'));
 const Resume = lazy(() => import('./Resume'));
 const Photos = lazy(() => import('./Photos'));
 const Videos = lazy(() => import('./Videos'));
+const TGIM = lazy(() => import('./TGIMonday'));
 const Navbar = lazy(() => import('./Navbar'));
 
 function Routers() {
@@ -17,6 +18,7 @@ function Routers() {
           <Route path="/resume" element={<Resume/>}/>
           <Route path="/photos" element={<Photos/>}/>
           <Route path="/videos" element={<Videos/>}/>
+          <Route path="/tgims" element={<TGIM/>}/>
         </Routes>
       </div>
     );

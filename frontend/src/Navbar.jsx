@@ -29,6 +29,7 @@ function Navbar () {
                     <Link className='menu' to={"/resume"}>RESUME</Link>
                     <Link className='menu' to={"/photos"}>PHOTOS</Link>
                     <Link className='menu' to={"/videos"}>VIDEOS</Link>
+                    <Link className='menu' to={"/tgims"}>TGIM</Link>
                     <Link className='menu' to={"/about"}>ABOUT</Link>
                 </div>
                 

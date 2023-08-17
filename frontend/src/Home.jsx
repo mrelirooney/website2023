@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Tgims from './Tgims';
+import Tgims from './Tgims'
 
 
 const Home = () => { 
@@ -39,6 +39,11 @@ const Home = () => {
             <div class="row" className='subHeader-row'>
                 <div class="row" className='titleBox'>       
                     <Tgims />
+                    <button type="button" className="callToAction">        
+                        <Link onClick={() => scroll2Top()} className='menu' to={"/tgims"}>
+                            <h4 className='buttonTitle'>Learn more about TGIM</h4>
+                        </Link>
+                    </button>
                 </div>
             </div>
             {/* Panel Banner */}
