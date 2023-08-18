@@ -20,6 +20,7 @@ from backend import views
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
+    path('', admin.site.urls),
     path('admin/', admin.site.urls),
     path('tgims/', views.tgim_list),
     path('tgims/<int:id>', views.tgim_detail)
