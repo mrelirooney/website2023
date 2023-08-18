@@ -63,6 +63,10 @@ CORS_ALLOWED_ORIGINS = [
 "http://127.0.0.1:9000",
 "http://localhost:3000",
 "http://localhost:3001",
+"https://www.elijahrooney.com/",
+"https://elijahrooney.com/",
+"www.elijahrooney.com/",
+"elijahrooney.com/",
 ]
 
 CORS_ALLOW_METHODS = [
